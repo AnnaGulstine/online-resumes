@@ -1,1 +1,56 @@
-<%= @resume %>
+  <div class="container">
+
+  <h2>Student Name</h2>
+
+  <div class="row marginBottom">
+    <div class="col-sm-3">
+      <h3>Photo:</h3><p><%= @resume.photo %></p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Name: </h3><p><%= @resume.first_name %> <%= @resume.last_name %></p> 
+      <h3>Email: </h3><p><%= @resume.email %></p>
+      <h3>Phone: </h3><p><%= @resume.phone_number %></p>   
+    </div>
+
+    <div class="col-sm-1"></div>
+
+    <div class="col-sm-4" id="socialMedia">
+      <h3>LinkedIn: </h3><p><%= @resume.linked_url %></p>
+      <h3>Link to resume: </h3><p><%= @resume.resume_url %></p>
+      <h3>Github: </h3><p><%= @resume.github_url %></p>
+      <h3>Blog: </h3><p><%= @resume.blog %></p>              
+      <h3>Twitter: </h3><p><%= @resume.twitter_handle %></p>
+    </div>
+  </div>
+
+  <div class="row marginBottom">
+    <div class="col-sm-7" id="bio">
+      <h3>Bio</h3><p><%= @resume.short_bio %></p>
+    </div>
+
+    <div class="col-sm-1"></div>
+
+    <div class="col-sm-4" id="skills">
+    <h3>Skills</h3>
+    </div>
+  </div>
+
+  <div class="row marginBottom">
+    <div class="col-sm-8" id="experiences">
+      <h3>Experience</h3>
+    </div>
+
+    <div class="col-sm-1"></div>
+
+    <div class="col-sm-3" id="twitterFeed">
+      <h3>Twitter feed</h3>
+    </div>
+  </div>
+
+  <div class="row marginBottom">
+    <div class="col-sm-5" id="educations">
+      <h3>Education</h3>
+    </div>
+  </div>
+
+</div>
