@@ -1,10 +1,10 @@
   <div class="container">
 
-  <h2>Student Name</h2>
+  <h2 class="turquoiseText">Student Name</h2>
 
   <div class="row marginBottom">
     <div class="col-sm-3">
-      <h3>Photo:</h3><p><%= @resume.photo %></p>
+      <h3>Photo:</h3><img src="<%= @resume.photo %>" id="photo"/>
     </div>
     <div class="col-sm-4">
       <h3>Name: </h3><p><%= @resume.first_name %> <%= @resume.last_name %></p> 

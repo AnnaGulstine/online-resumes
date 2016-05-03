@@ -18,7 +18,7 @@ class ResumesController < ApplicationController
         blog: "ldkjfaldkjf",
         resume_url: "ldkfjadlfj",
         github_url: "ldjalkdjf",
-        photo: "ldkjfadlskfj",
+        photo: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTJpzfiJWCcRihgEIPgigIK5NFkilbKUonVZYQrcfNsXo11x3x6",
         experiences: [
           {
             id: 1,
