@@ -1,3 +1,5 @@
+require 'twitter'
+
 class ResumesController < ApplicationController
   def index
   end
@@ -12,7 +14,7 @@ class ResumesController < ApplicationController
         phone_number: "9324893284",
         short_bio: "lkdjfaldksfj",
         linkedin_url: "ldjafljds",
-        twitter_handle: "dlkfadslkf",
+        twitter_handle: "AnnaGulstine",
         blog: "ldkjfaldkjf",
         resume_url: "ldkfjadlfj",
         github_url: "ldjalkdjf",
