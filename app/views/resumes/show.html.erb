@@ -31,29 +31,33 @@
 
     <div class="col-sm-4" id="skills">
     <h3>Skills</h3>
+      <ul>
+        <% @resume.skills.each do |skill| %>
+          <h5><li><%= skill.name %></li></h5>
+        <% end %> 
+      </ul>
     </div>
   </div>
 
   <div class="row marginBottom">
-    <div class="col-sm-8" id="experiences">
+    <div class="col-sm-7" id="experiences">
       <h3>Experience</h3>
       <ul>
-      <% @resume.experiences.each do |experience| %>
-        <h5><%= experience.job_title %></h5>
-        <li><%= experience.company_name %></li>
-        <li><%= experience.start_date %></li>
-        <li><%= experience.end_date %></li>
-        <li><%= experience.details %></li>
-      <% end %>
+        <% @resume.experiences.each do |experience| %>
+          <h5><%= experience.job_title %></h5>
+          <h5><li><%= experience.company_name %></li></h5>
+          <h5><li><%= experience.start_date %></li></h5>
+          <h5><li><%= experience.end_date %></li></h5>
+          <h5><li><%= experience.details %></li></h5>
+        <% end %>
       </ul>
     </div>
 
     <div class="col-sm-1"></div>
 
-    <div class="col-sm-3" id="twitterFeed">
-
-  <a class="twitter-timeline"  href="https://twitter.com/<%= @resume.twitter_handle %>">Tweets by @<%= @resume.twitter_handle %></a>
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <div class="col-sm-4" id="twitterFeed">
+      <a class="twitter-timeline"  href="https://twitter.com/<%= @resume.twitter_handle %>">Tweets by @<%= @resume.twitter_handle %></a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
   </div>
 

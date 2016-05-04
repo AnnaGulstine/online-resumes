@@ -23,6 +23,9 @@ class Resume
     resume_input[:educations].each do |education|
       @educations << Education.new(education)
     end
-    @skills = resume_input[:skills]
+    @skills = []
+    resume_input[:skills].each do |skill|
+      @skills << Skill.new(skill)
+    end
   end
 end
