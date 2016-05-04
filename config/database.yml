@@ -23,3 +23,9 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+
+  production:
+  database: online-resumes
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

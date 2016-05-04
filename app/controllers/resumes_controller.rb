@@ -2,6 +2,7 @@ require 'twitter'
 
 class ResumesController < ApplicationController
   def index
+    @resumes = Resume.All
   end
   
   def show
