@@ -24,7 +24,7 @@ production:
   <<: *default
   database: db/production.sqlite3
 
-  production:
+production:
   database: online-resumes
   adapter: postgresql
   encoding: unicode
