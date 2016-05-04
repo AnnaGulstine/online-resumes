@@ -25,11 +25,7 @@ class Resume
     resumes = []
     resume_hashes.each do |resume_hash|
       resumes << Resume.new(resume_hash)
-      p resume_hash
     end
-    puts "************"
-    # p resumes
-    puts "************"
     resumes
   end
 end
