@@ -45,4 +45,10 @@ class ResumesController < ApplicationController
         ]
       })
   end
+
+  def run_search
+    search_term = params[:search]
+    @resumes = Resume.where('description LIKE ?', "%" + search_term + "%")
+    render 'index.html.erb'
+  end
 end
