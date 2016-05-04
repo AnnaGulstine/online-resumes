@@ -1,5 +1,7 @@
 <h1>Quarterlife Crisis Online</h1>
 
+<h3>All your resumes are belong to us.</h3>
 <% @resumes.each do |resume| %>
-  <%= resume.first_name %>
+  <hr>
+  <a href="http://resumes/<%= resume.id %>"><%= resume.first_name %> <%= resume.last_name %>
 <% end %>
