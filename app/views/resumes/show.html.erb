@@ -61,9 +61,9 @@
     <div class="col-sm-5 grayBackground">
       <h3>Education</h3>
         <% @resume.educations.each do |education| %>
-            <h3>University: <%= education.university_name %></h3>
-            <h4>Attended from <%= education.start_date %> through <%= education.end_date %></h4>
-            <h4>Details: <%= education.details %></h4>       
+            <h4>University: <%= education.university_name %></h4>
+            <h5>Attended from <%= education.start_date %> through <%= education.end_date %></h5>
+            <h5>Details: <%= education.details %></h5>       
         <% end %>   
     </div>
   </div>
