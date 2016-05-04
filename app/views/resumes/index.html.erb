@@ -3,5 +3,5 @@
 <h3>All your resumes are belong to us.</h3>
 <% @resumes.each do |resume| %>
   <hr>
-  <a href="http://resumes/<%= resume.id %>"><%= resume.first_name %> <%= resume.last_name %>
+  <a href="http://localhost:3000/resumes/<%= resume.id %>"><%= resume.first_name %> <%= resume.last_name %>
 <% end %>
