@@ -31,9 +31,7 @@
     <div class="col-sm-4" id="skills">
     <h3>Skills</h3>
       <ul>
-        <% @resume.skills.each do |skill| %>
-          <h5><li><%= skill.name %></li></h5>
-        <% end %> 
+
       </ul>
     </div>
   </div>
@@ -65,12 +63,14 @@
   <div class="row marginBottom">
     <div class="col-sm-5" id="educations">
       <h3>Education</h3>
-      <% @resume.educations.each do |education| %>
-        <%= education.university_name %>
-        <%= education.start_date %>
-        <%= education.end_date %>
-        <%= education.details %>
-      <% end %>      
+        <% @resume.educations.each do |education| %>
+             <ul> 
+          <h4><%= education.university_name %></h4>
+          <li><%= education.start_date %></li>
+          <li><%= education.end_date %></li>
+          <li><%= education.details %></li>
+      </ul>             
+        <% end %>   
     </div>
   </div>
 

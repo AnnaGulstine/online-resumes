@@ -15,9 +15,18 @@ class Resume
     @resume_url = resume_input["resume_url"]
     @github_url = resume_input["github_url"]
     @photo = resume_input["photo"]
-    @experiences = resume_input["experiences"]
-    @educations = resume_input["educations"]
-    @skills = resume_input["skills"]
+    @experiences = []
+    resume_input["experiences"].each do |experience|
+      @experiences << Experience.new(experience)
+    end
+    @educations = []
+    resume_input["educations"].each do |education|
+      @educations << Education.new(education)
+    end
+    @skills = []
+    resume_input["skills"].each do |skill|
+      @skills << Skill.new(skill)
+    end
   end
 
   def self.all
@@ -29,12 +38,7 @@ class Resume
     resumes
   end
 
-    def self.all
-    resume_data = Unirest.get("https://thawing-lake-55981.herokuapp.com/students").body
-    resumes = []
-    resumes_data.each do |resume|
-      resumes << Resume.new(resume)
-    end   
-    resumes
+  def self.find_by(id)
+    Resume.new(Unirest.get("https://thawing-lake-55981.herokuapp.com/students/#{id}").body)
   end
 end
