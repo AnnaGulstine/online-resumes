@@ -28,4 +28,13 @@ class Resume
     end
     resumes
   end
+
+    def self.all
+    resume_data = Unirest.get("https://thawing-lake-55981.herokuapp.com/students").body
+    resumes = []
+    resumes_data.each do |resume|
+      resumes << Resume.new(resume)
+    end   
+    resumes
+  end
 end
