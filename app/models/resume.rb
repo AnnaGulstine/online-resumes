@@ -15,8 +15,14 @@ class Resume
     @resume_url = resume_input[:resume_url]
     @github_url = resume_input[:github_url]
     @photo = resume_input[:photo]
-    @experiences = resume_input[:experiences]
-    @educations = resume_input[:educations]
+    @experiences = []
+    resume_input[:experiences].each do |experience|
+      @experiences << Experience.new(experience)
+    end
+    @educations = []
+    resume_input[:educations].each do |education|
+      @educations << Education.new(education)
+    end
     @skills = resume_input[:skills]
   end
 end

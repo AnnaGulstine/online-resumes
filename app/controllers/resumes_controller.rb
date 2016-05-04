@@ -12,7 +12,7 @@ class ResumesController < ApplicationController
         last_name: "Gulstine",
         email: "annagulstine@gmail.com",
         phone_number: "9324893284",
-        short_bio: "lkdjfaldksfj",
+        short_bio: "lkdjfaldksfjkjfalkdsjfldsaf. l;aksdjfldksajflksdjflkadsfjsdlkfjdsalf.lkasdjflkasdjflakdsjfalkdsjflksdf. lasdjflasdjflasdjflkdasjflasdkjfalsd. al;sdfjalsdkfjlkdsjflakdsjfaldskfjdaslfkj. lajdsfl;adjsflkdasjflkdasjfldskajfasdlkfjasdl.",
         linkedin_url: "ldjafljds",
         twitter_handle: "AnnaGulstine",
         blog: "ldkjfaldkjf",
